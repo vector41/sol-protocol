@@ -1,0 +1,34 @@
+[package]
+name = "onesol-protocol"
+version = "0.4.3"
+authors = ["croath <croathliu@gmail.com>"]
+edition = "2018"
+exclude = ["js/**"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+no-entrypoint = []
+production = []
+
+[dependencies]
+solana-program = "=1.10.29"
+thiserror = "1.0"
+arrayref = "0.3.6"
+num-derive = "0.3.3"
+num-traits = "0.2.14"
+num_enum = "0.5.6"
+lazy_static = "1.4.0"
+
+
+[dev-dependencies]
+solana-sdk = "*"
+serum_dex = { version = "0.5.4", features = ["no-entrypoint", "test"]}
+bs58 = "*"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+doctest = false
+
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

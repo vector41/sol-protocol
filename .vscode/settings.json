@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  // Insert spaces when pressing `Tab`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "selection",
+  "cSpell.words": [
+    "bitflags",
+    "coption",
+    "entrypoint",
+    "enumflags",
+    "hardcode",
+    "lamports",
+    "msrm",
+    "onesol",
+    "Orderbook",
+    "Raydium",
+    "rustfmt",
+    "serumdex",
+    "spltokenswap",
+    "stableswap",
+    "sysvar",
+    "sysvars",
+    "tokenswap"
+  ],
+}
